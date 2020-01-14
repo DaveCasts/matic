@@ -1,0 +1,97 @@
+
+@import "bootstrap";
+@import "font-awesome";
+
+.img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: image_url('so-white.png');
+}
+
+.navbar-light a.navbar-brand {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: black;
+}
+
+.collapse .navbar-collapse {
+  float: right !important;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: red;
+}
+
+.hero {
+  background: image_url('head.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 800px;
+  width: auto;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+.frosty {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  h1 {
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight: 100;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  }
+
+  h2 {
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight: 200;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  }
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body {
+  background: image_url('cloudy-day.png');
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.me {
+    height: 150px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: black;
+    margin-top: 40px;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+
+  h2, h1 {
+    margin: 10px;
+  }
+}

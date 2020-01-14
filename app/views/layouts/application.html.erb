@@ -5,11 +5,92 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="flex-content-container">
+      <nav class="navbar navbar-toggleabe-md navbar-light bg-light">
+        <%= link_to image_tag( "logo5.png" ), root_path, class: 'navbar-brand' %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Home', root_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Tours', tour_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <%= yield %>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <b>About</b>
+            <br />
+            <%= link_to 'Team', '#' %>
+            <br />
+            <%= link_to 'Careers', '#' %>
+            <br />
+            <%= link_to 'Privacy Policy', '#' %>
+          </div>
+          <hr />
+          <div class="col-12 col-sm-3">
+            <b>Tours</b>
+            <br />
+            <%= link_to 'Tours', tour_path %>
+            <br />
+            <%= link_to 'Careers', '#' %>
+            <br />
+            <%= link_to 'Privacy Policy', '#' %>
+          </div>
+          <hr />
+          <div class="col-12 col-sm-3">
+            <b>Contact</b>
+            <br />
+            alba.leea@maticsport.com
+            <br />
+            3550 S Harlan St Unit 125
+            <br />
+            Denver, CO 80235
+            <br />
+            Tel: 7204197316
+          </div>
+          <hr />
+          <div class="col-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <br />
+            <%= link_to '#' do %>
+              <span class="fa fa-facebook-square fa-2x socila-button"></span>
+            <% end %>
+            <%= link_to '#' do %>
+              <span class="fa fa-twitter-square fa-2x socila-button"></span>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
