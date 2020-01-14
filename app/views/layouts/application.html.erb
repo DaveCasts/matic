@@ -5,11 +5,72 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-toggleabe-md navbar-light bg-light">
+      <%= link_to image_tag( "logo5.png" ), root_path, class: 'navbar-brand' %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
     <%= yield %>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <b>About</b>
+            <br />
+            <%= link_to 'Team', '#' %>
+            <br />
+            <%= link_to 'Careers', '#' %>
+            <br />
+            <%= link_to 'Privacy Policy', '#' %>
+          </div>
+          <div class="col-12 col-sm-3">
+            <b>Contact</b>
+            <br />
+            email
+            <br />
+            One Kendall Square
+            <br />
+            Cambridge MA, 02113
+          </div>
+          <div class="col-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <br />
+            <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <span class="fa fa-twitter-square fa-2x social-button"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
