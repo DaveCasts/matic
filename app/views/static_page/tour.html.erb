@@ -1,0 +1,28 @@
+
+<br />
+
+<div class="booyah-box col-10 offset-1">
+  <h1>Tours</h1>
+  <div calss="row">
+    <div class="booyah-box">
+      <h2>Club Team International Friendlies</h2>
+      <p>
+        <%= link_to "display using the full viewer", pdfjs.full_path(file: "/Club_Team_International_Friendlies_Traveling_Packet.pdf") %>
+      </P>
+    </div>
+    <div class="booyah-box">
+      <h2>Team Tournament Travel Experience</h2>
+      <P>
+        <%= link_to "display using the full viewer", pdfjs.full_path(file: "/Team-Tournament-Travel-Experience.pdf") %>
+      </P>
+    </div>
+    <div class="booyah-box">
+      <h2>Individual Traveling Packet</h2>
+      <P>
+        <iframe src="<%= pdfjs.full_path(file: "/app/assests/images/Individual_Traveling_Packet_1.pdf") %>">display using the full viewer
+        </iframe>
+      </P>
+    </div>
+  </div>
+
+</div>

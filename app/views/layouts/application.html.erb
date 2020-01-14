@@ -12,34 +12,36 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-toggleabe-md navbar-light bg-light">
-      <%= link_to image_tag( "logo5.png" ), root_path, class: 'navbar-brand' %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav" >
-        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tours</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div id="flex-content-container">
+      <nav class="navbar navbar-toggleabe-md navbar-light bg-light">
+        <%= link_to image_tag( "logo5.png" ), root_path, class: 'navbar-brand' %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Home', root_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Tours', tour_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 
-    <%= yield %>
+      <%= yield %>
+    </div>
 
     <div id="footer">
       <div class="container">
@@ -53,21 +55,39 @@
             <br />
             <%= link_to 'Privacy Policy', '#' %>
           </div>
+          <hr />
+          <div class="col-12 col-sm-3">
+            <b>Tours</b>
+            <br />
+            <%= link_to 'Tours', tour_path %>
+            <br />
+            <%= link_to 'Careers', '#' %>
+            <br />
+            <%= link_to 'Privacy Policy', '#' %>
+          </div>
+          <hr />
           <div class="col-12 col-sm-3">
             <b>Contact</b>
             <br />
-            email
+            alba.leea@maticsport.com
             <br />
-            One Kendall Square
+            3550 S Harlan St Unit 125
             <br />
-            Cambridge MA, 02113
+            Denver, CO 80235
+            <br />
+            Tel: 7204197316
           </div>
+          <hr />
           <div class="col-12 col-sm-3 social">
             <b>Social</b>
             <br />
             <br />
-            <span class="fa fa-facebook-square fa-2x social-button"></span>
-            <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <%= link_to '#' do %>
+              <span class="fa fa-facebook-square fa-2x socila-button"></span>
+            <% end %>
+            <%= link_to '#' do %>
+              <span class="fa fa-twitter-square fa-2x socila-button"></span>
+            <% end %>
           </div>
         </div>
       </div>
