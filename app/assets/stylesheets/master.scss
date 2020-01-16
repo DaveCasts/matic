@@ -93,5 +93,45 @@ body {
 
   h2, h1 {
     margin: 10px;
+    color: black !important;
   }
 }
+
+.blueyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #2b458c;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+
+  h2, h1 {
+    text: center;
+    margin: 10px;
+    color: #9dabab;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+#wrapper { 
+  width: auto; 
+  height: auto; 
+  margin: 0 auto;
+} 
+
+#odp {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width:500px) {
+  #wrapper{
+    width: auto;
+    height: auto;
+  }
+}
+
