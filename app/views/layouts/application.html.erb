@@ -27,10 +27,10 @@
               <%= link_to 'Tours', tour_path, class: 'nav-link' %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <%= link_to 'Services', service_path, class: 'nav-link' %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <%= link_to 'Contact', contact_path, class: 'nav-link' %>
             </li>
           </ul>
         </div>
@@ -46,9 +46,9 @@
           <div class="col-12 col-sm-3">
             <b>About</b>
             <br />
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Team', team_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
+            <%= link_to 'Careers', career_path %>
             <br />
             <%= link_to 'Policies', policy_path %>
           </div>
@@ -56,11 +56,11 @@
           <div class="col-12 col-sm-3">
             <b>Tours</b>
             <br />
-            <%= link_to 'Tours', tour_path %>
+            <%= link_to 'Our tours', tour_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
+            <%= link_to '#', '#' %>
             <br />
-            <%= link_to 'Privacy Policy', '#' %>
+            <%= link_to '#', '#' %>
           </div>
           <hr />
           <div class="col-12 col-sm-3">
@@ -82,7 +82,7 @@
             <%= link_to '#' do %>
               <span class="fa fa-facebook-square fa-2x socila-button"></span>
             <% end %>
-            <%= link_to '#' do %>
+            <%= link_to 'https://www.facebook.com/Matic-Sports', target:"_blank" do %>
               <span class="fa fa-twitter-square fa-2x socila-button"></span>
             <% end %>
             <%= link_to 'https://instagram.com/matic.sport', target:"_blank" do %>
