@@ -21,9 +21,6 @@
         <div class="collapse navbar-collapse" id="navbarNav" >
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
               <%= link_to 'Home', root_path, class: 'nav-link' %>
             </li>
             <li class="nav-item">
@@ -53,7 +50,7 @@
             <br />
             <%= link_to 'Careers', '#' %>
             <br />
-            <%= link_to 'Privacy Policy', '#' %>
+            <%= link_to 'Policies', policy_path %>
           </div>
           <hr />
           <div class="col-12 col-sm-3">
@@ -87,6 +84,9 @@
             <% end %>
             <%= link_to '#' do %>
               <span class="fa fa-twitter-square fa-2x socila-button"></span>
+            <% end %>
+            <%= link_to 'https://instagram.com/matic.sport', target:"_blank" do %>
+              <span class="fa fa-instagram fa-2x socila-button"></span>
             <% end %>
           </div>
         </div>

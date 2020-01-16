@@ -28,3 +28,99 @@
     <p>Qoutes</p>
   </div>
 </div>
+
+<br /> 
+<br />
+<br />
+
+<div class="blueyah-box">
+  <div class="col-12 col-sm">
+    <h1 class="text-center">What we do</h1>
+    <div id="wrapper">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video id="odp" width="320" height="240" controls class="d-block w-100">
+              <source src="odp_dia_01_1.mp4" type="video/mp4">
+              <source src="odp_dia_01_1.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video id="odp" width="320" height="240" controls class="d-block w-100">
+              <source src="odp_dia_02_1.mp4" type="video/mp4">
+              <source src="odp_dia_02_1.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video id="odp" width="320" height="240" controls class="d-block w-100">
+              <source src="odp_dia_03_1.mp4" type="video/mp4">
+              <source src="odp_dia_03_1.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video id="odp" width="320" height="240" controls class="d-block w-100">
+              <source src="odp_dia_04_1.mp4" type="video/mp4">
+              <source src="odp_dia_04_1.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video id="odp" width="320" height="240" controls class="d-block w-100">
+              <source src="odp_dia_05_1.mp4" type="video/mp4">
+              <source src="odp_dia_05_1.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  var videoPlayButton,
+    videoWrapper = document.getElementsByClassName('video-wrapper')[0],
+      video = document.getElementsByTagName('video')[0],
+      videoMethods = {
+          renderVideoPlayButton: function() {
+              if (videoWrapper.contains(video)) {
+          this.formatVideoPlayButton()
+                  video.classList.add('has-media-controls-hidden')
+                  videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+                  videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+              }
+          },
+
+          formatVideoPlayButton: function() {
+              videoWrapper.insertAdjacentHTML('beforeend', '\
+                  <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
+                      <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>\
+                      <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
+                  </svg>\
+              ')
+          },
+
+          hideVideoPlayButton: function() {
+              video.play()
+              videoPlayButton.classList.add('is-hidden')
+              video.classList.remove('has-media-controls-hidden')
+              video.setAttribute('controls', 'controls')
+          }
+    }
+
+  videoMethods.renderVideoPlayButton()
+</script>
