@@ -34,6 +34,9 @@
             <li class="nav-item">
               <%= link_to 'Contact', contact_path, class: 'nav-link' %>
             </li>
+            <li class="nav-item">
+              <%= link_to 'Gallery', gallery_path, class: 'nav-link' %>
+            </li>
           </ul>
         </div>
       </nav>
@@ -60,7 +63,7 @@
             <br />
             <%= link_to 'Our tours', tour_path %>
             <br />
-            <%= link_to '#', '#' %>
+            <%= link_to 'Gallery', gallery_path %>
             <br />
             <%= link_to '#', '#' %>
           </div>
@@ -81,10 +84,10 @@
             <b>Social</b>
             <br />
             <br />
-            <%= link_to '#' do %>
+            <%= link_to 'https://www.facebook.com/Matic-Sports', target:"_blank" do %>
               <span class="fa fa-facebook-square fa-2x socila-button"></span>
             <% end %>
-            <%= link_to 'https://www.facebook.com/Matic-Sports', target:"_blank" do %>
+            <%= link_to '#', target:"_blank" do %>
               <span class="fa fa-twitter-square fa-2x socila-button"></span>
             <% end %>
             <%= link_to 'https://instagram.com/matic.sport', target:"_blank" do %>

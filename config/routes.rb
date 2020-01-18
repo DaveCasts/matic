@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get 'team', to: 'static_page#team'
   get 'contact', to: 'static_page#contact'
   get 'service', to: 'static_page#services'
-
+  get 'gallery', to: 'static_page#gallery'
 end
