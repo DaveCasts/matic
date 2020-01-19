@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'contact', to: 'static_page#contact'
   get 'service', to: 'static_page#services'
   get 'gallery', to: 'static_page#gallery'
+  get 'about', to: 'static_page#about'
 end
