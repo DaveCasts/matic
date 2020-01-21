@@ -2,6 +2,10 @@
 @import "bootstrap";
 @import "font-awesome";
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .img {
   width: 30px;
   height: 30px;
@@ -176,4 +180,28 @@ body {
 .column {
   flex: 33.33%;
   padding: 5px;
+}
+
+.pds {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: rgb(43, 69, 140);
+}
+
+.topbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgba(43, 69, 140, .7);
+  bottom: 40px;
+  right: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(255, 215, 0);
+  font-size: 22px !important;
+}
+
+.topbtn :hover {
+  color: white;
 }
