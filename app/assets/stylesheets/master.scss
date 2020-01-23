@@ -22,7 +22,7 @@ html {
 .yell {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
-  color: rgb(255, 215, 0);
+  color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -46,12 +46,16 @@ html {
 }
 
 .hero {
-  background: image_url('head2.jpg') no-repeat center center fixed;
+  background: image_url('head25.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: auto;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
@@ -60,19 +64,24 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty {
-  background: rgba(0, 0, 0, 0.5);
   color: white;
-
-  h1 {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-  }
 
   h2 {
     font-family: "Helvetica Neue", Helvetica;
+    font-weight: 100;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    position: absolute;
+    top: 355px;
+    left: 0px;
+  }
+
+  h3 {
+    font-family: "Helvetica Neue", Helvetica;
     font-weight: 200;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    position: absolute;
+    top: 365px;
+    left: 250px;
   }
 }
 
@@ -87,7 +96,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 body {
-  background: image_url('green1.jpg');
+  background: image_url('green1.jpg') top;
   font-family: "Helvetica Neue", Helvetica;
 }
 
@@ -103,13 +112,19 @@ body {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: rgba(255, 255, 255, .9);
+  background: white;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-  h2, h1 {
+  h3, h2, h1, p {
     margin: 10px;
+    text-align: center;
     color: black !important;
   }
 }
@@ -122,11 +137,16 @@ body {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   h2, h1 {
     text: center;
     margin: 10px;
-    color: rgb(255, 215, 0);
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -140,27 +160,13 @@ body {
   margin: 0 auto;
 } 
 
-#odp {
-  width: 70%;
-  height: 55%;
+#wrapper {
+  padding-right: 25px;
+  padding-left: 25px;
+  width: 80%;
+  height: 85%;
 }
 
-@media (max-width:500px) {
-  #wrapper {
-    padding-right: 25px;
-    padding-left: 25px;
-    width: 80%;
-    height: 85%;
-
-    .controls {
-      width: 50%;
-    }
-  }
-}
-
-.carousel-control-next, .carousel-control-prev {
-  height: 60%;
-}
 
 .gal {
   height: 70px;
@@ -179,6 +185,11 @@ body {
 .column {
   flex: 33.33%;
   padding: 5px;
+}
+
+.columnv {
+  flex: 50%;
+  padding: 5px; 
 }
 
 .pds {
