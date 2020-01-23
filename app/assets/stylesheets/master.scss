@@ -65,14 +65,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .frosty {
   color: white;
-
+  transform:translateY(-50%);
   h2 {
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 100;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
     position: relative;
-    top: 310px;
-    right: 310px;
+    top: 75%;
+    right: 15%;
   }
 
   h3 {
@@ -80,8 +80,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
     font-weight: 200;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
     position: relative;
-    top: 300px;
-    right: 190px;
+    top: 15%;
+    right: 15%;
   }
 }
 
