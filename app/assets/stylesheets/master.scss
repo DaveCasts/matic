@@ -164,13 +164,28 @@ body {
 } 
 
 .side {
-  flex: 30%;
+  flex: auto;
+  padding-right: 2px;
+  padding-left: 1px;
+
 }
 
 .meow {
   alt: Snow; 
   width: 100%;
 }
+
+
+.blue {
+  background-color: rgb(43, 69, 140);
+  border: none;
+  color: white !important;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} 
 
 .row {
   display: flex;
@@ -190,7 +205,11 @@ body {
 .pds {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
-  color: rgb(43, 69, 140);
+  color: white;
+}
+
+.a :hover {
+  color: rgb(255, 215, 0);
 }
 
 .topbtn {
