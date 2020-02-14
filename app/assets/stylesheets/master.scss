@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 body {
-  background: image_url('green1.jpg') top;
+  background: white top;
   font-family: "Helvetica Neue", Helvetica;
 }
 
@@ -133,7 +133,7 @@ body {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: rgba(43, 69, 140, .6);
+  background: rgba(43, 69, 140, 1);
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
@@ -155,12 +155,17 @@ body {
 }
 
 #wrapper { 
-  width: 90%; 
+  width: 90% !important; 
   height: 75%; 
   margin: 0 auto;
   width: 50%;
   height: 100%;
+  flex: auto !important;
 } 
+
+.side {
+  flex: 30%;
+}
 
 .meow {
   alt: Snow; 
@@ -169,6 +174,7 @@ body {
 
 .row {
   display: flex;
+  flex: auto !important;
 }
 
 .column {
@@ -177,7 +183,7 @@ body {
 }
 
 .columnv {
-  flex: auto;
+  flex: 60%;
   padding: 5px; 
 }
 
