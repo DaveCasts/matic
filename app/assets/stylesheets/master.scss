@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .frosty {
   color: white;
   transform:translateY(-50%);
-  h2 {
+  .h2 {
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 100;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
     right: 15%;
   }
 
-  h3 {
+  .h3 {
     font-family: "Helvetica Neue", Helvetica;
     font-weight: 200;
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
@@ -128,31 +128,15 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  h3, h2, h1, p {
+  .h3, .h2, .h1, .p {
     margin: 10px;
     text-align: center;
     color: black !important;
   }
-}
 
-.blueyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: rgba(43, 69, 140, 1);
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  padding: 10px;
-  width: 80%;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  h2, h1 {
-    text: center;
-    margin: 10px;
-    color: rgb(255, 255, 255);
+  .btn {
+    background-color: rgba(43, 69, 140, 1);
+    color: white;
   }
 }
 
