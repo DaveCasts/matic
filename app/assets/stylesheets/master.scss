@@ -127,9 +127,40 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  flex: 2 0px;
 
   .h3, .h2, .h1, .p {
     margin: 10px;
+    flex: 2 0px;
+    text-align: center;
+    color: black !important;
+  }
+
+  .btn {
+    background-color: rgba(43, 69, 140, 1);
+    color: white;
+  }
+}
+
+.blueyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background-color: rgba(43, 69, 140, 1);
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  flex: 2 0px;
+
+  .h3, .h2, .h1, .p {
+    margin: 10px;
+    flex: 2 0px;
     text-align: center;
     color: black !important;
   }
@@ -227,4 +258,12 @@ video {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   color: black;
+}
+
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
 }
