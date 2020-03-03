@@ -37,20 +37,9 @@
                     <li class="nav-item">
                         <%= link_to 'GALLERY', gallery_path, class: 'nav-link' %>
                     </li>
-                </ul>
-                <ul class="navbar-nav">
-                  <% if user_signed_in? %>
                     <li class="nav-item">
-                      <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+                      <%= link_to 'SIGN UP', signup_path, class: 'nav-link' %>
                     </li>
-                  <% else %>
-                    <li class="nav-item">
-                      <%= link_to 'SIGN IN', new_user_session_path, class: 'nav-link' %>
-                    </li>
-                    <li class="nav-item">
-                      <%= link_to 'SIGN UP', new_user_registration_path, class: 'nav-link' %>
-                    </li>
-                  <% end %>
                 </ul>
             </div>
         </nav>
@@ -74,22 +63,19 @@
             <br />
             <%= link_to 'About us', about_path %>
             <br />
+            <%= link_to 'Services', service_path %>
+            <br />
             <%= link_to 'Policies', policy_path %>
           </div>
           <hr />
           <div class="col-12 col-sm-3">
-            <b>Coaches</b>
-            <br />
-            <%= link_to 'Take a team', new_coach_team_path %>
-          </div>
-          <div class="col-12 col-sm-3">
             <b>Tours</b>
+            <br />
+            <%= link_to 'Go on a tour', signup_path %>
             <br />
             <%= link_to 'Our tours', tour_path %>
             <br />
             <%= link_to 'Gallery', gallery_path %>
-            <br />
-            <%= link_to 'Services', service_path %>
           </div>
           <hr />
           <div class="col-12 col-sm-3">

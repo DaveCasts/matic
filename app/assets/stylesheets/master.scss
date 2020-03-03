@@ -32,6 +32,12 @@ html {
   color: black;
 }
 
+.nav-item {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: bold;
+  color: black;
+}
+
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
@@ -175,32 +181,17 @@ body {
   clear: both;
 }
 
-#wrapper { 
-  margin: 0;
-  padding: 0;
-  border: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 100%;
-}
-
 video {
-  width: 100%;
+  width: auto;
   height: 56.25%;
   margin-top: 21.875%;
 } 
 
-.side {
-  padding-right: 2px;
-  padding-left: 1px;
 
-}
 
 .meow {
   alt: Snow; 
-  width: 100%;
+  width: auto;
 }
 
 
@@ -218,12 +209,6 @@ video {
 .row {
   display: flex;
   flex: auto !important;
-}
-
-.column {
-  float: left;
-  flex: 100%;
-  padding: 5px;
 }
 
 .pds {
@@ -252,12 +237,6 @@ video {
 
 .topbtn :hover {
   color: white;
-}
-
-.nav-item {
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 100;
-  color: black;
 }
 
 .help-block {
