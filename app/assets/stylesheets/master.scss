@@ -6,17 +6,19 @@ html {
   scroll-behavior: smooth !important;
 }
 
-.img {
-  width: 30px;
-  height: 30px;
+
+
+.meow { 
+  width: 100%;
+  display: flex;
 }
 
 .images {
-  width: 90%;
-  height: 90%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: auto;
 }
 
 .yell {
@@ -186,14 +188,6 @@ video {
   height: 56.25%;
   margin-top: 21.875%;
 } 
-
-
-
-.meow {
-  alt: Snow; 
-  width: auto;
-}
-
 
 .blue {
   background-color: rgb(43, 69, 140);
