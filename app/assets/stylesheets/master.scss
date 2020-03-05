@@ -6,19 +6,15 @@ html {
   scroll-behavior: smooth !important;
 }
 
-
-
-.meow { 
+.column {
   width: 100%;
   display: flex;
+  flex: 2 0px;
+  padding: 0px 0px 5px 5px;
 }
 
-.images {
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
+.flex-container {
+  display: flex;
 }
 
 .yell {
@@ -102,11 +98,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .btn {
   border-radius: 0;
-}
-
-.feature {
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 body {
@@ -239,4 +230,25 @@ video {
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
   margin: 10px;
+}
+
+#column {
+  width: 33%;
+  display: flex;
+  padding-left: 5px;
+  float: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.images {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
