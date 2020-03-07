@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth !important;
 }
 
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
 .column {
   width: 100%;
   display: flex;
@@ -121,7 +127,7 @@ body {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
-  width: 80%;
+  width: 90%;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -175,9 +181,8 @@ body {
 }
 
 video {
-  width: auto;
-  height: 56.25%;
-  margin-top: 21.875%;
+  width: 100%;
+  margin-top: 0px;
 } 
 
 .blue {
@@ -250,5 +255,5 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  width: 90%;
 }
