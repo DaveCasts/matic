@@ -176,6 +176,34 @@ body {
   }
 }
 
+.inviyah-box {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: white;
+  border: none;
+  border-color: transparent;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 2 0px;
+
+  .h3, .h2, .h1, .p {
+    margin: 10px;
+    flex: 2 0px;
+    text-align: center;
+    color: black !important;
+  }
+
+  .btn {
+    background-color: rgba(43, 69, 140, 1);
+    color: white;
+  }
+}
+
 .clear {
   clear: both;
 }
